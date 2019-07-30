@@ -19,6 +19,7 @@ public class ArchiveService {
     public List<Archive> allArchive(){
         return archive;
     }
+
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
     public String addArchive(@RequestBody Archive newData) {
