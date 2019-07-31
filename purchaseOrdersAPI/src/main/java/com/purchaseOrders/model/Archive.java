@@ -9,7 +9,17 @@ public class Archive {
     private String desc;
     private AccountType subAccount;
     private Date date;
-    //TODO will need another private for details which will be based on the component formTypE
+    private PurchaseOrder details;
+
+
+    public PurchaseOrder getDetails() {
+        return details;
+    }
+
+    public void setDetails(PurchaseOrder details) {
+        this.details = details;
+    }
+//TODO will need another private for details which will be based on the component formTypE
 
     public int getpNo() {
         return pNo;
@@ -59,12 +69,13 @@ public class Archive {
         this.date = date;
     }
 
-    public Archive(int pNo, FormType formType, AccountType subAccount, String desc, Date date, ArchiveStatus status) {
+    public Archive(int pNo, FormType formType, AccountType subAccount, String desc, Date date, ArchiveStatus status, PurchaseOrder details) {
         this.pNo = pNo;
         this.formType = formType;
         this.status = status;
         this.desc = desc;
         this.subAccount = subAccount;
         this.date = date;
+        this.details = details;
     }
 }
