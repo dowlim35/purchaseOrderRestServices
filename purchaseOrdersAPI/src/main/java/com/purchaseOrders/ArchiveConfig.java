@@ -19,12 +19,12 @@ public class ArchiveConfig {
         Date date = new Date();
         Training blank = new Training(null,null,null,null, null,null,null,null,null,null,null,0,0,0,0,null,null,0);
 
-        archive.add(new Archive (1, FormType.TRAINING, AccountType.MISC, "This is dummy Data",  date , ArchiveStatus.ACCEPTED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )), null ));
-        archive.add(new Archive (2, FormType.TRAINING, AccountType.TRAINING, "This is dummy Data", date  , ArchiveStatus.PENDING, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )), null));
-        archive.add(new Archive (3, FormType.CONTRACTORS, AccountType.MISC, "This is dummy Data", date , ArchiveStatus.ACCEPTED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
-        archive.add(new Archive (4, FormType.TRAINING, AccountType.GRM, "This is dummy Data", date , ArchiveStatus.DENIED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
-        archive.add(new Archive (5, FormType.TRAINING, AccountType.TRAINING, "This is dummy Data", date , ArchiveStatus.PENDING, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
-        archive.add(new Archive (6, FormType.TRAVEL, AccountType.GCS, "This is dummy Data", date , ArchiveStatus.DENIED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
+        archive.add(new Archive (1, FormType.TRAINING, AccountType.MISC, "AWS Training",  date , ArchiveStatus.ACCEPTED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )), null ));
+        archive.add(new Archive (2, FormType.TRAINING, AccountType.TRAINING, "Git Training", date  , ArchiveStatus.PENDING, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )), null));
+        archive.add(new Archive (3, FormType.CONTRACTORS, AccountType.MISC, "", date , ArchiveStatus.ACCEPTED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
+        archive.add(new Archive (4, FormType.TRAINING, AccountType.GRM, "Kotlin Training", date , ArchiveStatus.DENIED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
+        archive.add(new Archive (5, FormType.TRAINING, AccountType.TRAINING, "Java Training", date , ArchiveStatus.PENDING, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
+        archive.add(new Archive (6, FormType.TRAVEL, AccountType.GCS, "Boston Trip", date , ArchiveStatus.DENIED, (new PurchaseOrder( "Michael Dowling","50 samsungTvs",5,"€", date ,400.0 )),null));
         return archive;
     }
 }
